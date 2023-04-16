@@ -24,7 +24,7 @@ WildRydes.map = WildRydes.map || {};
 
         var view = new MapView({
             //center: [-102.31, 27.60],
-            center: [-100, 35]
+            center: [-100, 35],
             container: 'map',
             map: map,
             zoom: 3
