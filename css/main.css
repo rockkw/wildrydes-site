@@ -3077,6 +3077,7 @@ img {
 .page-investors .top-section {
     background: url(../images/wr-investors-header.png) no-repeat bottom;
     background-size: cover;
+    background-color: #000
     text-align: center;
     padding: 1.875rem 0
 }
