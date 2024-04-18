@@ -2694,11 +2694,11 @@ img {
     border-radius: 1.25rem;
     color: #f50856;
     font-size: 1.25rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: .3125rem 1.5625rem;
     position: absolute;
     left: 50%;
-    bottom: 5%;
+    bottom: 10%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     font-weight: 700
