@@ -2481,7 +2481,6 @@ img {
 
 .menu-opened .site-nav {
     opacity: 1;
-    background: #fff
     z-index: 100
 }
 
@@ -2699,7 +2698,7 @@ img {
     padding: .3125rem 1.5625rem;
     position: absolute;
     left: 50%;
-    bottom: 50%;
+    bottom: 10%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     font-weight: 700
