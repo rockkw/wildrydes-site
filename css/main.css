@@ -2689,13 +2689,13 @@ img {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: #000000;
+    background: #00000000;
     color: #ffffff;
     font-size: 1.25rem;
     /* text-transform: uppercase; */
     position: absolute;
-    left: 50%;
-    bottom: 20%;
+    left: 30%;
+    top: 20%;
     font-weight: 700
 }
 
