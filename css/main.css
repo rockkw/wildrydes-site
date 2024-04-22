@@ -2707,13 +2707,13 @@ img {
     background: #fff;
     border: 1px solid transparent;
     border-radius: 1.25rem;
-    color: #f50856;
+    color: #0416a0;
     font-size: 1.25rem;
     /* text-transform: uppercase; */
     padding: .3125rem 1.5625rem;
     position: absolute;
     left: 50%;
-    top: 20%;
+    bottom: 10%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     font-weight: 700
