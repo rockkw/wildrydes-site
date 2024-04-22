@@ -2691,10 +2691,10 @@ img {
     appearance: none;
     background: #00000000;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 3.125rem
     /* text-transform: uppercase; */
     position: absolute;
-    /* left: 50%; */
+    left: 40%;
     text-align: center;
     top: 20%;
     font-weight: 700
