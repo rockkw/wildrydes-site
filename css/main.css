@@ -2685,6 +2685,20 @@ img {
     }
 }
 
+.page-home .home-mach {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #000000;
+    color: #ffffff;
+    font-size: 1.25rem;
+    /* text-transform: uppercase; */
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    font-weight: 700
+}
+
 .page-home .home-button {
     -webkit-appearance: none;
     -moz-appearance: none;
