@@ -2695,6 +2695,7 @@ img {
     /* text-transform: uppercase; */
     position: absolute;
     /* left: 50%; */
+    text-align: center;
     top: 20%;
     font-weight: 700
 }
