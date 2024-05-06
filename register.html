@@ -1,73 +1,89 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mach 50 LLC</title>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/main.css">
 
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="/css/message.css">
-        <script src="js/vendor/modernizr.js"></script>
-        
-    </head>
-    <body class="page-home">
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+  <script src="js/vendor/modernizr.js"></script>
+</head>
+<body class="page-home">
 
-        <div id="noCognitoMessage" class="configMessage" style="display: none;">
-            <div class="backdrop"></div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">No Cognito User Pool Configured</h3>
-                </div>
-                <div class="panel-body">
-                    <p>There is no user pool configured in <a href="/js/config.js">/js/config.js</a>. You'll configure this in Module 2 of the workshop.</p>
-                </div>
-            </div>
-        </div>
+  <header class="site-header">
+    <h1 class="title">Mach 50 LLC</h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signin.html">Sign in</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="people.html">Meet the People</a></li>
+<!--         
+        <li><a href="investors.html">Investors &amp; Board of Directors</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="apply.html">Apply</a></li> -->
+      </ul>
+    </nav>
+    <!-- <button type="button" class="btn-menu"><span>Menu</span></button>
+    <a class="home-button" href="/signin.html">Sign in</a>     -->
+  </header>
+  
+  
 
-        <header class="site-header">
-            <h1 class="title">Mach 50 LLC</h1>
-            <nav class="site-nav">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="signin.html">Sign in</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="people.html">Meet the People</a></li>
-              </ul>
-            </nav>
-          </header>
+  <button type="button" class="btn-menu"><span>Menu</span></button>
+  <!-- 
+    
+    <h2 class="home-mach">Mach 50 LLC. Could anything move that fast?
+    <br>Modern Satellite AI Mission Control Systems
+  </h2> -->
+  <a class="home-button" href="/register.html">See it in action</a>
 
-        <br>
-        <br>
-        <br>
+  <section class="form-wrap">
+    <h1>   </h1>
+    <form id="registrationForm">
+      <input type="email" id="emailInputRegister" placeholder="Email" pattern=".*" required>
+      <input type="password" id="passwordInputRegister" placeholder="Password" pattern=".*" required>
+      <input type="password" id="password2InputRegister" placeholder="Confirm Password" pattern=".*" required>
 
-        <section class="form-wrap">
-            <h1>   </h1>
-            <form id="registrationForm">
-              <input type="email" id="emailInputRegister" placeholder="Email" pattern=".*" required>
-              <input type="password" id="passwordInputRegister" placeholder="Password" pattern=".*" required>
-              <input type="password" id="password2InputRegister" placeholder="Confirm Password" pattern=".*" required>
+      <input type="submit" value="Register">
+    </form>
+</section>
 
-              <input type="submit" value="Register">
-            </form>
-        </section>
+<script src="js/vendor/jquery-3.1.0.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/cognito-auth.js"></script>
 
-        <script src="js/vendor/jquery-3.1.0.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
-        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
-        <script src="js/config.js"></script>
-        <script src="js/cognito-auth.js"></script>
-    </body>
+  <footer class="site-footer">
+    <div class="row column">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="People.html">Meet the People</a></li>
+          <!-- 
+          <li><a href="investors.html">Investors & Board of Directors</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="apply.html">Apply</a></li>
+           -->
+        </ul>
+      </nav>
+    </div>
+
+    <div class="row column">
+      <div class="footer-legal">
+        &copy;Mach 50 LLC<br>
+        All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
