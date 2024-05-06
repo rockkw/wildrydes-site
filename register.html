@@ -39,18 +39,14 @@
     <h2 class="home-mach">Mach 50 LLC. Could anything move that fast?
     <br>Modern Satellite AI Mission Control Systems
   </h2> -->
-  <a class="home-button" href="/register.html">See it in action</a>
+  <form id="registrationForm">
+    <input type="email" id="emailInputRegister" placeholder="Email" pattern=".*" required>
+    <input type="password" id="passwordInputRegister" placeholder="Password" pattern=".*" required>
+    <input type="password" id="password2InputRegister" placeholder="Confirm Password" pattern=".*" required>
 
-  <section class="form-wrap">
-    <h1>   </h1>
-    <form id="registrationForm">
-      <input type="email" id="emailInputRegister" placeholder="Email" pattern=".*" required>
-      <input type="password" id="passwordInputRegister" placeholder="Password" pattern=".*" required>
-      <input type="password" id="password2InputRegister" placeholder="Confirm Password" pattern=".*" required>
+    <input type="submit" value="Register">
+  </form>
 
-      <input type="submit" value="Register">
-    </form>
-</section>
 
 <script src="js/vendor/jquery-3.1.0.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
