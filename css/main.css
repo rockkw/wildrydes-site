@@ -2664,7 +2664,8 @@ img {
 }
 
 .page-home .site-header .title {
-     background: url(../images/wr-home-top.jpg) no-repeat top; 
+     /* background: url(../images/wr-home-top.jpg) no-repeat top;  */
+     background: url(../images/bg2.png) no-repeat top; 
     background-size: cover;
     padding-bottom: 60.2753441802%;
     margin: 0;
