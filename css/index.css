@@ -115,6 +115,15 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+post-secondary-title {
+  color: #FFFFFF;
+  font-family: 'Origin Light', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0em;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
 
 
 
