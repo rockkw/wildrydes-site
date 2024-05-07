@@ -2453,8 +2453,31 @@ img {
 }
 
 .content {
-    font-style: italic
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
 }
+
+.post-secondary-title {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: -0.3rem;
+    font-size: 5rem;
+    }
+
+.post-secondary-title h1 {
+    color: #b00404;
+    font-weight: 400;
+    font-size: 5rem;
+}
+
 
 .site-nav {
     /* background: url(../images/star-pattern.png) 50% hsla(0, 0%, 100%, .2); */
@@ -2679,6 +2702,14 @@ img {
     margin: 0;
     text-indent: -999em;
     position: relative
+    color: #050505;
+    font-family: 'Origin Light', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0em;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    
 }
 
 @media screen and (min-width:75em) {
@@ -2725,7 +2756,14 @@ img {
     bottom: 10%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+
+    
+    
 }
 
 @media screen and (min-width:40em) {
@@ -2739,6 +2777,14 @@ img {
     color: #fff;
     padding: 5rem 0;
     text-align: center
+    margin: 0
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
 }
 
 .home-about-block {
@@ -2761,6 +2807,13 @@ img {
 
 .home-about-block .title {
     margin: 0
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
 }
 
 .home-about-block .title:before {
