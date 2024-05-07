@@ -2490,12 +2490,12 @@ img {
 }
 
 .site-nav a {
-    color: #000;
+    color: #fffafa;
     font-weight: 700
 }
 
 .site-nav a:hover {
-    color: #f50856
+    color: #1403fd
 }
 
 @media screen and (min-width:40em) {
