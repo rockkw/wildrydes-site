@@ -2557,7 +2557,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    background: #fff
+    background: #000000
 }
 
 .btn-menu span:after {
