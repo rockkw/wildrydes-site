@@ -2573,7 +2573,7 @@ img {
 }
 
 .menu-opened .btn-menu span:after {
-    background: #fcf9f9;
+    background: #911010;
     top: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
