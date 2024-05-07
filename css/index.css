@@ -142,6 +142,7 @@ header img{
 .form-wrap{
     width: 35%;
     margin: 0 auto;
+    
 }
 
 .left-form{
@@ -190,11 +191,12 @@ input[type=text], input[type=password], input[type=email] {
     background: transparent;
     outline: none;
 
-    font-family: "fairplex-wide";
-    font-size: 24px;
-    opacity: 1;
-    color: white;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
 
     -webkit-transition: border-bottom 0.4s ease-in-out;
     transition: border-bottom 0.4s ease-in-out;
@@ -220,11 +222,12 @@ input[type=submit] {
     cursor: pointer;
     display: block;
 
-    font-family: "fairplex-wide";
-    font-size: 24px;
-    opacity: 1;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
     text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
 
     -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
