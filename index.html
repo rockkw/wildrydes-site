@@ -1029,8 +1029,6 @@
                 <a href="#features" class="btn-secondary">Read More</a>
             </div>
 
-            <div class="artistic-overlay"></div>
-
             <div class="description-section">
                 <div class="description-text">
                     <p>This platform showcases the future of satellite operations. Mach50 is built for modern space missions and constellation management, but it can be used for any type of satellite operation. It's named after the incredible speed of modern space technology.</p>
@@ -1047,40 +1045,64 @@
             <h2 class="hero-title" style="font-size: 52px;">Satellite software reimagined</h2>
             
             <div class="features-grid">
-                <div class="feature-card" onclick="openFeatureModal('ai')">
-                    <span class="feature-icon">🤖</span>
-                    <h3 class="feature-title">AI-Powered Operations</h3>
-                    <p class="feature-description">Embed artificial intelligence directly into your satellite missions with automated decision-making.</p>
-                </div>
-                
-                <div class="feature-card" onclick="openFeatureModal('cloud')">
-                    <span class="feature-icon">☁️</span>
-                    <h3 class="feature-title">Cloud Serverless</h3>
-                    <p class="feature-description">Built on modern cloud architecture for maximum scalability and reliability.</p>
-                </div>
-                
-                <div class="feature-card" onclick="openFeatureModal('modernization')">
+                <div class="feature-card" onclick="openFeatureModal('energy')">
                     <span class="feature-icon">⚡</span>
-                    <h3 class="feature-title">Instant Modernization</h3>
-                    <p class="feature-description">Stop waiting years. Plug in our solution and modernize immediately.</p>
+                    <h3 class="feature-title">Energy Optimization</h3>
+                    <p class="feature-description">Predictive analytics for energy consumption optimization with up to 15% savings.</p>
                 </div>
-                
-                <div class="feature-card" onclick="openFeatureModal('security')">
-                    <span class="feature-icon">🛡️</span>
-                    <h3 class="feature-title">Compliant & Secure</h3>
-                    <p class="feature-description">Built with compliance and security at the core for aerospace standards.</p>
+
+                <div class="feature-card" onclick="openFeatureModal('imagery')">
+                    <span class="feature-icon">🛰️</span>
+                    <h3 class="feature-title">Image Analysis AI</h3>
+                    <p class="feature-description">Advanced AI-powered satellite image analysis for real-time object detection and monitoring.</p>
                 </div>
-                
-                <div class="feature-card" onclick="openFeatureModal('developer')">
-                    <span class="feature-icon">🔧</span>
-                    <h3 class="feature-title">Developer-Friendly</h3>
-                    <p class="feature-description">Modern tools that accelerate development cycles for your team.</p>
+
+                <div class="feature-card" onclick="openFeatureModal('transportation')">
+                    <span class="feature-icon">🚌</span>
+                    <h3 class="feature-title">Smart Transportation Analytics</h3>
+                    <p class="feature-description">Computer vision and advanced analytics for optimizing public transportation systems with AI-powered insights.</p>
                 </div>
-                
-                <div class="feature-card" onclick="openFeatureModal('control')">
-                    <span class="feature-icon">📊</span>
-                    <h3 class="feature-title">Mission Control</h3>
-                    <p class="feature-description">Complete operations software for fast-paced space missions.</p>
+
+                <div class="feature-card" onclick="openFeatureModal('facial')">
+                    <span class="feature-icon">😊</span>
+                    <h3 class="feature-title">Facial Expression Recognition</h3>
+                    <p class="feature-description">Real-time emotion detection technology for enhanced customer experience and safety monitoring.</p>
+                </div>
+
+                <div class="feature-card" onclick="openFeatureModal('rag')">
+                    <span class="feature-icon">🤖</span>
+                    <h3 class="feature-title">Universal RAG Assistant</h3>
+                    <p class="feature-description">AI-powered conversational assistant leveraging Oracle's advanced AI and database technologies for intelligent document retrieval and question-answering.</p>
+                </div>
+
+                <div class="feature-card" onclick="openFeatureModal('crime')">
+                    <span class="feature-icon">🚨</span>
+                    <h3 class="feature-title">Crime Prediction System</h3>
+                    <p class="feature-description">Advanced neural network system using AdjNet architecture to forecast crime occurrences and enable proactive law enforcement resource allocation.</p>
+                </div>
+
+                <div class="feature-card" onclick="openFeatureModal('weather')">
+                    <span class="feature-icon">🌤️</span>
+                    <h3 class="feature-title">AI Weather Forecasting</h3>
+                    <p class="feature-description">Natural language weather queries with severe weather visualization, multilingual subtitles, and accessibility features for meteorological platforms.</p>
+                </div>
+
+                <div class="feature-card" onclick="openFeatureModal('idphoto')">
+                    <span class="feature-icon">📸</span>
+                    <h3 class="feature-title">ID Photo Quality Assessment</h3>
+                    <p class="feature-description">Automated validation of ID photos using computer vision to assess brightness, facial parameters, and compliance with regulatory standards.</p>
+                </div>
+
+                <div class="feature-card" onclick="openFeatureModal('vehicle')">
+                    <span class="feature-icon">🚗</span>
+                    <h3 class="feature-title">Vehicle Inspection Automation</h3>
+                    <p class="feature-description">AI-powered license plate recognition, operator supervision, and automated inspection compliance tracking using YOLOv11 and secure mTLS communication.</p>
+                </div>
+
+                <div class="feature-card" onclick="openFeatureModal('budget')">
+                    <span class="feature-icon">💰</span>
+                    <h3 class="feature-title">Budget Forecasting</h3>
+                    <p class="feature-description">Machine learning time series analysis to predict material costs and optimize resource allocation with 8% average error rate.</p>
                 </div>
             </div>
         </section>
@@ -1223,76 +1245,150 @@
 
         // Feature details data
         const featureDetails = {
-            ai: {
-                icon: '🤖',
-                title: 'AI-Powered Operations',
-                description: 'Embed artificial intelligence directly into your satellite missions with our automated and compliant model.',
-                points: [
-                    'Machine learning algorithms for predictive maintenance and anomaly detection',
-                    'Automated decision-making for routine operations',
-                    'Real-time data analysis and insights',
-                    'Intelligent resource allocation and optimization',
-                    'Natural language interfaces for mission commands'
-                ]
-            },
-            cloud: {
-                icon: '☁️',
-                title: 'Cloud Serverless',
-                description: 'Built on modern cloud serverless architecture for maximum scalability and reliability.',
-                points: [
-                    'Auto-scaling infrastructure that grows with your missions',
-                    'Pay only for what you use - no idle server costs',
-                    'Global distribution for low-latency operations',
-                    'Built-in redundancy and disaster recovery',
-                    'Zero maintenance overhead'
-                ]
-            },
-            modernization: {
+            energy: {
                 icon: '⚡',
-                title: 'Instant Modernization',
-                description: 'Stop waiting years to build your own Sat ops. Plug in our solution and be modernized immediately.',
+                title: 'Energy Optimization',
+                description: 'Predictive analytics solution that uses advanced machine learning to reduce energy costs and improve sustainability.',
                 points: [
-                    'Deploy your mission control in days, not years',
-                    'Pre-built integrations with major satellite platforms',
-                    'Modern APIs for seamless integration',
-                    'Continuous updates with zero downtime',
-                    'Eliminate legacy system technical debt'
+                    'Random Forest and Neural Networks for accurate energy forecasting',
+                    'Integration of operational, weather, and historical data sources',
+                    'Up to 15% reduction in energy consumption',
+                    'Attribute importance analysis for optimal model performance',
+                    'Real-time operational efficiency monitoring',
+                    'Sustainability compliance and carbon footprint reduction'
                 ]
             },
-            security: {
-                icon: '🛡️',
-                title: 'Compliant & Secure',
-                description: 'Built with compliance and security at the core. Meet aerospace industry standards without complexity.',
+            imagery: {
+                icon: '🛰️',
+                title: 'Image Analysis AI',
+                description: 'Advanced AI-based satellite image analysis using state-of-the-art machine learning models for real-time insights.',
                 points: [
-                    'SOC 2 Type II certified infrastructure',
-                    'End-to-end encryption for all data transmissions',
-                    'Aerospace industry compliance (ITAR, EAR)',
-                    'Regular security audits and penetration testing',
-                    'Role-based access control and audit logs'
+                    'Object detection and recognition with YOLOv8 and S2ANet models',
+                    'Real-time change detection between satellite images',
+                    'SAR (Synthetic Aperture Radar) image analysis',
+                    'Advanced image segmentation with Segment Anything model',
+                    'Automatic report generation and knowledge base',
+                    'Continuous learning and customizable analysis framework'
                 ]
             },
-            developer: {
-                icon: '🔧',
-                title: 'Developer-Friendly',
-                description: 'Your developers will be modernized with AI and Cloud automation tools that accelerate development.',
+            transportation: {
+                icon: '🚌',
+                title: 'Smart Transportation Analytics',
+                description: 'Computer vision and advanced analytics solution for optimizing public transportation systems through AI-powered video analysis and real-time insights.',
                 points: [
-                    'Modern REST APIs and SDKs in popular languages',
-                    'Comprehensive documentation and code examples',
-                    'CI/CD integration for automated deployments',
-                    'Sandbox environment for testing',
-                    'Active developer community and support'
+                    'Real-time safety monitoring with automatic hazard detection',
+                    'Crowd density management and passenger flow optimization',
+                    'Traffic flow analysis for route optimization and delay reduction',
+                    'Predictive maintenance for infrastructure and vehicle defects',
+                    'CO2 emissions tracking and environmental impact monitoring',
+                    'Multi-object tracking with 25 FPS processing using YOLO and DeepSORT',
+                    'Heat maps and trajectory analysis for bottleneck identification',
+                    'Integration with OCI Vision, Data Science, and Analytics Cloud'
                 ]
             },
-            control: {
-                icon: '📊',
-                title: 'Mission Control',
-                description: 'Complete mission control and operations software designed for fast-paced space operations.',
+            facial: {
+                icon: '😊',
+                title: 'Facial Expression Recognition',
+                description: 'AI-powered facial emotion recognition technology that analyzes expressions from images and videos to reveal emotional states for enhanced customer experience and safety.',
                 points: [
-                    'Real-time telemetry monitoring and visualization',
-                    'Command and control interfaces',
-                    'Automated anomaly detection and alerting',
-                    'Mission planning and scheduling tools',
-                    'Comprehensive reporting and analytics'
+                    'High confidence level in identifying facial expression sentiment',
+                    'Real-time emotion detection from static images and video streams',
+                    'Personalised service delivery based on emotional state',
+                    'Customer behavior analysis and advertising optimization',
+                    'Healthcare and employment assistance applications',
+                    'Public safety and crime detection capabilities',
+                    'Driver fatigue detection for transportation safety',
+                    'Built on OCI Vision, OCI Data Science, and OCI Functions'
+                ]
+            },
+            rag: {
+                icon: '🤖',
+                title: 'Universal RAG Assistant (AIDE)',
+                description: 'Modular and highly adaptable conversational assistant leveraging Oracle\'s advanced AI and database technologies for intelligent document retrieval, question-answering, and multi-domain knowledge integration.',
+                points: [
+                    'Modular architecture with well-defined interfaces for easy customization',
+                    'Support for multiple chunking strategies (fixed-size and semantic)',
+                    'Integration with OCI GenAI, Cohere, Ollama, and OpenAI chat models',
+                    'Efficient similarity search powered by Oracle Database 23ai',
+                    'Multi-domain knowledge integration across documents, APIs, and databases',
+                    'Advanced query optimization and result re-ranking capabilities',
+                    'Flexible deployment (on-premise, cloud, hybrid environments)',
+                    'Built with Python 3.10+ and ReactJS for modern AI solutions'
+                ]
+            },
+            crime: {
+                icon: '🚨',
+                title: 'Crime Prediction System',
+                description: 'Advanced machine learning system utilizing AdjNet neural network architecture to forecast future crime occurrences based on temporal dependencies, enabling law enforcement agencies to proactively allocate resources and implement targeted intervention strategies.',
+                points: [
+                    'AdjNet neural network with spatio-temporal convolutional blocks',
+                    'Temporal dependency analysis for accurate crime pattern recognition',
+                    'Customizable spatial analysis with tessellated tiles or administrative boundaries',
+                    'Open data integration from government sources (UK Police data)',
+                    'Real-time forecasting of crime occurrences within defined areas',
+                    'User-friendly interface with interactive maps and visualization dashboards',
+                    'Scalable architecture for large-scale datasets and real-time predictions',
+                    'Built with Python 3.7+ for proactive crime prevention and public safety'
+                ]
+            },
+            weather: {
+                icon: '🌤️',
+                title: 'AI-Driven Weather Forecasting',
+                description: 'Comprehensive meteorological platform combining natural language weather queries, severe weather visualization, automatic audio transcription, and multilingual subtitle generation to enhance accessibility and user experience.',
+                points: [
+                    '5-day weather forecasts with natural language query processing',
+                    'Severe weather bulletins with geographic polygon visualization',
+                    'OCI Speech Service for automatic audio/video transcription',
+                    'Generative AI text rephrasing for broader communication',
+                    'Automatic multilingual subtitle translation (SRT/VTT formats)',
+                    'Location-to-coordinate translation for accurate API invocation',
+                    'Real-time weather alerts with interactive map displays',
+                    'Built with Python 3.7+, OCI GenAI, and Oracle Digital Assistant'
+                ]
+            },
+            idphoto: {
+                icon: '📸',
+                title: 'ID Photo Quality Assessment',
+                description: 'Production-grade computer vision system that automates validation of ID photos for license applications, assessing brightness, facial parameters, eye features, and regulatory compliance to expedite back-office processing.',
+                points: [
+                    'Automated brightness and blur detection for technical quality',
+                    'Facial parameter extraction: centering, orientation, and proportions',
+                    'Eye feature analysis: aperture, red-eye, and glasses detection',
+                    'Valid/Invalid categorization based on regulatory standards',
+                    'Machine learning feedback loop for continuous improvement',
+                    'Oracle Analytics Cloud dashboard for results visualization',
+                    'Production system (100% maturity) for Motorizzazione applications',
+                    'Built with Python 3.7+, PL/SQL, OCI Vision, and OCI Data Science'
+                ]
+            },
+            vehicle: {
+                icon: '🚗',
+                title: 'Automated Vehicle Inspection System',
+                description: 'AI-driven vehicle inspection automation using YOLOv11 for license plate detection, OCR for registration extraction, facial blurring for privacy, and comprehensive operator supervision to ensure compliance and efficiency.',
+                points: [
+                    'YOLOv11 with Oriented Bounding Boxes for precise plate detection',
+                    'Tesseract OCR for accurate license plate character extraction',
+                    'Facial blurring for operator anonymization and privacy protection',
+                    'Operator activity tracking: time, movement, and probe connectivity',
+                    'Historical inspection comparison for anomaly detection',
+                    'Real-time monitoring with automated irregularity alerts',
+                    'Secure mTLS connections for encrypted camera communication',
+                    'Built with Python 3.9+, Nvidia A10 GPU, and OCI infrastructure'
+                ]
+            },
+            budget: {
+                icon: '💰',
+                title: 'Budget Forecasting System',
+                description: 'Production machine learning system utilizing time series analysis (Exponential Smoothing, ARIMA, Prophet) to forecast material costs one year in advance, achieving 8% average error for optimal budget allocation.',
+                points: [
+                    'Multi-model approach: Exponential Smoothing, ARIMA, and Prophet',
+                    'Material-specific models trained on 6 years of historical data',
+                    'Year-ahead budget predictions with 8% average error rate',
+                    'Validated on real historical purchase data (2014-2020)',
+                    'Automated forecasting for multiple material types simultaneously',
+                    'Production system (100% maturity) for cost optimization',
+                    'OCI Data Science and Autonomous Database integration',
+                    'Built with Python 3.7+ for procurement planning and resource allocation'
                 ]
             }
         };
